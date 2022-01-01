@@ -1,0 +1,23 @@
+01/01/2022 11:59:00 +05:30 [Fatal] (HP) <<Development>> (23) The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at React_ASPNETCORE_JWT_Auth.Controllers.UserController.TestError() in E:\Projects\React-ASPNETCORE-JWT-Auth\React-ASPNETCORE-JWT-Auth\Controllers\UserController.cs:line 98
+   at lambda_method4(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at React_ASPNETCORE_JWT_Auth.Middlewares.JwtMiddleware.Invoke(HttpContext context, IUserService userService, IJwtUtils jwtUtils) in E:\Projects\React-ASPNETCORE-JWT-Auth\React-ASPNETCORE-JWT-Auth\Middlewares\JwtMiddleware.cs:line 38
+   at React_ASPNETCORE_JWT_Auth.Middlewares.ErrorHandlerMiddleware.Invoke(HttpContext httpContext, ILogger`1 logger) in E:\Projects\React-ASPNETCORE-JWT-Auth\React-ASPNETCORE-JWT-Auth\Middlewares\ErrorHandlerMiddleware.cs:line 26
